@@ -4,11 +4,11 @@ public static void main(String[] args){
 Scanner input = new Scanner(System.in);
 System.out.println("Enter numbers: ");
 int numbers=input.nextInt();
-if(numbers=+){
-System.out.println("positive");
+if(numbers<0){
+System.out.println("negative");
 }
 else{
-System.out.println("negative");
+System.out.println("positive");
 }
 }
 }
