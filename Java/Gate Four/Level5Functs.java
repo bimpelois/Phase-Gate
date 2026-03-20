@@ -155,3 +155,25 @@
         System.out.println(result);
     }
 }
+
+
+public class ReplaceNonPerfectSquares {
+
+    public static List<Integer> replaceNonSquares(List<Integer> list) {
+
+        List<Integer> result = new ArrayList<>();
+
+        for (int num : list) {
+            int root = (int) Math.sqrt(num);
+
+            if (root * root == num) {
+                result.add(num);
+            } else {
+                result.add(-1);
+            }
+        }
+
+        return result;
+    }
+}
+
