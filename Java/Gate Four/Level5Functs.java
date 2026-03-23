@@ -1,50 +1,50 @@
-//import java.util.Arrays;
-//import java.util.Collections;
-//
-//public class Level5Functs{
-//
-//    public static boolean isPrime(int num) {
-//        if (num <= 1) return false;
-//
-//        for (int i = 2; i <= Math.sqrt(num); i++) {
-//            if (num % i == 0) return false;
-//        }
-//        return true;
-//    }
-//
-//    public static Integer[] getSortedPrimes(int[] arr) {
-//
-//       
-//        int count = 0;
-//        for (int num : arr) {
-//            if (isPrime(num)) count++;
-//        }
-//
-//        Integer[] primes = new Integer[count];
-//        int index = 0;
-//
-//       
-//        for (int num : arr) {
-//            if (isPrime(num)) {
-//                primes[index++] = num;
-//            }
-//        }
-//
-//        
-//        Arrays.sort(primes, Collections.reverseOrder());
-//
-//        return primes;
-//    }
-//
-//    public static void main(String[] args) {
-//        int[] numbers = {5, 9, 3, 6, 2};
-//
-//        Integer[] result = getSortedPrimes(numbers);
-//
-//        System.out.println(Arrays.toString(result)); 
-//    }
-//}
-//
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Level5Functs{
+
+    public static boolean isPrime(int num) {
+        if (num <= 1) return false;
+
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) return false;
+        }
+        return true;
+    }
+
+    public static Integer[] getSortedPrimes(int[] arr) {
+
+       
+        int count = 0;
+        for (int num : arr) {
+            if (isPrime(num)) count++;
+        }
+
+        Integer[] primes = new Integer[count];
+        int index = 0;
+
+       
+        for (int num : arr) {
+            if (isPrime(num)) {
+                primes[index++] = num;
+            }
+        }
+
+        
+        Arrays.sort(primes, Collections.reverseOrder());
+
+        return primes;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {5, 9, 3, 6, 2};
+
+        Integer[] result = getSortedPrimes(numbers);
+
+        System.out.println(Arrays.toString(result)); 
+    }
+}
+
 
 
     public static int[] replaceWithZeros(int[] arr) {
